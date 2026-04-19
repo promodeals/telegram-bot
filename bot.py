@@ -7,6 +7,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Bot is working 👍")
 from flask import Flask
+
 import threading
 
 app_web = Flask(__name__)
